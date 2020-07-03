@@ -84,7 +84,7 @@ header {
 /*banner*/
 .banner {
 	height: 80vh;
-	background-image: url("file:///home/sam/Downloads/templated-introspect/images/banner.jpg");
+	background-image: url("../images/banner.jpg");
 	background-repeat: no-repeat;
 	background-position: 15% left;
 	background-size: cover;
