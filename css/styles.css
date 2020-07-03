@@ -1,0 +1,280 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Lato", Sans serif;
+
+}
+
+header {
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	background-color: #1C1C1C;
+	line-height: 80px;
+	padding: 0 80px;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+#toggle {
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+	display: none;
+}
+
+.show-menu {
+	float: right;
+	color: #fff;
+}
+
+
+.show-menu,
+.hide-menu {
+	display: none;
+	transition: .7s;
+	cursor: pointer;
+}
+
+.logo {
+	position: absolute;
+	font-family: 'Pacifico', cursive;
+	font-weight: normal;
+	font-size: 1.75em;
+}
+
+.logo a {
+	float: left;
+	text-decoration: none;
+	color: #e5474b;
+}
+
+.logo a:hover {
+	color: darkred;
+}
+
+.menu-items {
+	float: right;
+}
+
+.menu-items a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0 2em;
+	font-size: .85em;
+	font-weight: 700;
+	line-height: 2;
+}
+
+.menu-items a:hover {
+	color: #5a5a5a;
+}
+
+.menu-items hr {
+	display: none;
+}
+
+/*banner*/
+.banner {
+	height: 80vh;
+	background-image: url("file:///home/sam/Downloads/templated-introspect/images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: 15% left;
+	background-size: cover;
+	transition: .9s;
+}
+
+.banner-text {
+	position: absolute; 
+	top: 260px; 
+	left: 80px;
+	transition: .9s ease-out;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    max-width: 65em;
+    width: auto;
+    margin: 0 auto;
+    z-index: 1;
+    line-height: 1.5;
+}
+
+.banner-text h1 {
+	font-size: 2em;
+    margin: 0 0 1em 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.banner-text span {
+	font-weight: normal;
+}
+
+.btn {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	position: absolute; 
+	top: 120px; 
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+}
+
+.banner-text a:hover {
+	background-color: #5a5a5a;
+}
+
+.section-two {
+	height: 70vh;
+	padding: 0 80px;
+}
+
+.section-two h2 {
+	color: #e5474b;
+	font-size: 1.75em;
+	font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+	text-transform: uppercase;
+	padding-top: 90px;
+}
+
+.btn-two {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #e5474b;
+	padding: 10px 20px;
+	/*position: absolute; */
+	/*top: 120px; */
+	text-decoration: none;
+	color: #e5474b;
+	font-size: 13px;
+}
+
+
+@media only screen and (max-width: 980px) {
+	.show-menu,
+	.hide-menu {
+		display: inline-block;
+	}
+
+	.menu-items a {
+		display: block;
+	}
+
+	.menu-items {
+	    position: fixed;
+	    float: left;
+	    width: 30%;
+	    height: 100vh;
+	    right: -100%;
+	    top: 0;
+	    background-color: #1C1C1C;
+	    padding: 40px 0;
+	    line-height: normal;
+	    transition: .9s;
+	}
+
+	.menu-items hr {
+		display: inline-block;
+		color: #484848;
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.hide-menu {
+		position: absolute;
+		top: 40px;
+		right: 45px;
+		color: #484848;
+		font-size: 1em;
+	}
+
+	#toggle:checked~.menu-items {
+		right: 0;
+	}
+
+}
+
+@media only screen and (max-width: 895px) {
+
+
+.menu-items {
+    position: fixed;
+    float: left;
+    width: 30%;
+    height: 50vh;
+    right: -100%;
+    top: 0;
+    background-color: #1C1C1C;
+    padding: 40px 0;
+    line-height: normal;
+    transition: .9s;
+    z-index: 1;
+}
+
+.banner {
+	height: 80vh;
+	background-image: url("file:///home/sam/Downloads/templated-introspect/images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: 15% left;
+	background-size: cover;
+	transition: .9s;
+}
+
+.banner-text {
+	position: absolute; 
+	top: 260px; 
+	left: 80px;
+	transition: .9s ease-out;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    max-width: 65em;
+    width: auto;
+    margin: 0 auto;
+    /*z-index: 10000;*/
+    line-height: 1.2;
+}
+
+.banner-text h1 {
+	font-size: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.banner-text span {
+	font-weight: normal;
+}
+
+.btn {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	position: absolute; 
+	top: 180px; 
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+}
+
+.banner-text a:hover {
+	background-color: #5a5a5a;
+}
+
+
+}
+
