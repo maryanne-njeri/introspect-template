@@ -115,6 +115,7 @@ header {
 
 .banner-text span {
 	font-weight: normal;
+	padding-bottom: 0px;
 }
 
 .btn {
@@ -161,15 +162,12 @@ header {
 	padding: 16px 20px;
 	text-decoration: none;
 	color: #e5474b;
-	/*font-size: 2em;*/
 	font: inherit;
-/*	position: absolute; 
-	top: 900px;*/ 
 	font-weight: 500px;
 }
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 895px) {
 	.show-menu,
 	.hide-menu {
 		display: inline-block;
@@ -231,8 +229,6 @@ header {
 		color: #5B5B5B;
 		font-family: "Lato", sans-serif;
 	    font-size: 15pt;
-	    /*margin-bottom: 3em;*/
-
 	}
 
 	.btn-two {
@@ -244,14 +240,12 @@ header {
 		color: #e5474b;
 		/*font-size: 2em;*/
 		font: inherit;
-	/*	position: absolute; 
-		top: 1000px;*/ 
 		font-weight: 500px;
 	}
 
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 600px) {
 
 
 .menu-items {
@@ -358,127 +352,221 @@ header {
 
 }
 
-@media only screen and (max-width: 600px) {
-
-	header {
-		height: 80px;
-		width: 100%;
-		text-align: center;
-		background-color: #1C1C1C;
-		line-height: 80px;
-		padding: 0 20px;
-		position: sticky;
-		top: 0;
-		z-index: 2;
-	}
-
-	.hide-menu {
-			position: absolute;
-			top: 10px;
-			right: 15px;
-			color: #484848;
-			font-size: 1em;
-		}
 
 
-	.banner-text {
-		position: absolute; 
-		top: 260px; 
-		left: 25px;
-		transition: .9s ease-out;
-		color: #fff;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-	    max-width: 65em;
-	    width: auto;
-	    margin: 0 auto;
-	    z-index: 1;
-	    line-height: 1.5;
-	    font-size: 14px;
-	}
-
-	.btn {
-		text-transform: uppercase;
-		background-color: transparent;
-		border: 2px solid #fff;
-		padding: 10px 20px;
-		position: absolute; 
-		top: 160px; 
-		text-decoration: none;
-		color: #fff;
-		font-size: 12px;
-	}
+@media only screen and (max-width: 320px) {
 
 
-	.section-two {
-		height: 70vh;
-		padding: 0 20px;
-	}
+.menu-items {
+    position: fixed;
+    float: left;
+    width: 30%;
+    height: 50vh;
+    right: -100%;
+    top: 0;
+    background-color: #1C1C1C;
+    padding: 40px 0;
+    line-height: normal;
+    transition: .9s;
+    z-index: 1;
+}
 
-	.section-two h2 {
-		color: #e5474b;
-		font-size: 20px;
-		font-weight: 700;
-	    line-height: 1.5;
-	    margin: 0 0 1em 0;
-		text-transform: uppercase;
-		padding-top: 50px;
-	}
+.banner {
+	height: 80vh;
+	background-image: url(../images/user.jpg);
+	background-repeat: no-repeat;
+	background-position: 15% left;
+	background-size: cover;
+	transition: .9s;
+}
 
-	.section-two p {
-		line-height: 2em;
-		color: #5B5B5B;
-		font-family: "Lato", sans-serif;
-	    font-size: 15pt;
-	}
+.banner-text {
+	position: absolute; 
+	top: 260px; 
+	left: 80px;
+	transition: .9s ease-out;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    max-width: 65em;
+    width: auto;
+    margin: 0 auto;
+    /*z-index: 10000;*/
+    line-height: 1.2;
+}
 
-	.btn-two {
-		text-transform: uppercase;
-		background-color: transparent;
-		border: 2px solid #e5474b;
-		padding: 12px 24px;
-		margin-top: 2em;
-		text-decoration: none;
-		color: #e5474b;
-		/*font-size: 2em;*/
-		font: inherit;
-		/*position: absolute; 
-		top: 1000px; */
-		font-weight: 500px;
-	}
+.banner-text h1 {
+	font-size: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.banner-text span {
+	font-weight: normal;
+}
+
+.btn {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #fff;
+	padding: 16px 20px;
+	position: absolute; 
+	top: 180px; 
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+}
+
+.banner-text a:hover {
+	background-color: #5a5a5a;
+}
+
+
+.section-two {
+	height: 70vh;
+	padding: 0 80px;
+}
+
+.section-two h2 {
+	color: #e5474b;
+	font-size: 1.75em;
+	font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+	text-transform: uppercase;
+	padding-top: 90px;
+}
+
+.section-two p {
+	line-height: 2em;
+	color: #5B5B5B;
+	font-family: "Lato", sans-serif;
+    font-size: 15pt;
+}
+
+.btn-two {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #e5474b;
+	padding: 12px 24px;
+	margin-top: 2em;
+	text-decoration: none;
+	color: #e5474b;
+	font: inherit;
+	font-weight: 500px;
+}
+
 
 }
 
 
+@media only screen and (max-width: 360px) {
 
-@media only screen and (max-width: 420px) {
 
-	.banner-text {
-		position: absolute; 
-		top: 260px; 
-		left: 25px;
-		transition: .9s ease-out;
-		color: #fff;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	    max-width: 65em;
-	    width: auto;
-	    margin: 0 auto;
-	    padding: 0 2px;
-	    z-index: 1;
-	    line-height: 1.5;
-	    font-size: 14px;
-	}
+.menu-items {
+    position: fixed;
+    float: left;
+    width: 30%;
+    height: 50vh;
+    right: -100%;
+    top: 0;
+    background-color: #1C1C1C;
+    padding: 40px 0;
+    line-height: normal;
+    transition: .9s;
+    z-index: 1;
+}
 
-	.btn {
-		text-transform: uppercase;
-		background-color: transparent;
-		border: 2px solid #fff;
-		padding: 10px 20px;
-		text-decoration: none;
-		color: #fff;
-		font-size: 10px;
-	}
+.banner {
+	height: 80vh;
+	background-image: url(../images/user.jpg);
+	background-repeat: no-repeat;
+	background-position: 15% left;
+	background-size: cover;
+	transition: .9s;
+}
+
+.banner-text {
+	position: absolute; 
+	top: 260px; 
+	left: 80px;
+	transition: .9s ease-out;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    max-width: 65em;
+    width: auto;
+    margin: 0 auto;
+    /*z-index: 10000;*/
+    line-height: 1.2;
+}
+
+.banner-text h1 {
+	font-size: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.banner-text span {
+	font-weight: normal;
+}
+
+.btn {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #fff;
+	padding: 16px 20px;
+	position: absolute; 
+	top: 180px; 
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+}
+
+.banner-text a:hover {
+	background-color: #5a5a5a;
+}
+
+
+.section-two {
+	height: 70vh;
+	padding: 0 80px;
+}
+
+.section-two h2 {
+	color: #e5474b;
+	font-size: 1.75em;
+	font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+	text-transform: uppercase;
+	padding-top: 90px;
+}
+
+.section-two p {
+	line-height: 2em;
+	color: #5B5B5B;
+	font-family: "Lato", sans-serif;
+    font-size: 15pt;
+}
+
+.btn-two {
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #e5474b;
+	padding: 12px 24px;
+	margin-top: 2em;
+	text-decoration: none;
+	color: #e5474b;
+	font: inherit;
+	font-weight: 500px;
+}
 
 
 }
+
+
